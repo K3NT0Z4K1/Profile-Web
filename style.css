@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right,rgb(78, 162, 162), rgb(130, 255, 255),rgb(96, 203, 203),rgb(78, 162, 162));
 }
 
 html {
@@ -60,6 +61,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: bold ;
 }
 
 .logo:hover {
