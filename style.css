@@ -336,12 +336,12 @@ section {
 }
 
 .article-container {
+  width: 100%;
+  height: 220px; /* SAME HEIGHT FOR ALL PROJECT IMAGES */
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 article {
@@ -367,10 +367,12 @@ article .icon {
 }
 
 .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* THIS IS THE MAGIC */
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
 }
+
 
 .project-title {
   margin: 1rem;
