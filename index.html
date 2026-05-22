@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K3NT0Z4K1 — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </nav>
+
+  <!-- BENTO GRID -->
+  <main class="bento-grid">
+
+    <!-- CARD 1: Profile -->
+    <div class="card card-profile">
+      <div class="avatar-wrap">
+        <img src="./assets/Person-Icon.webp" alt="Kent Ryan profile picture" class="avatar" />
+      </div>
+      <h2 class="profile-name">Kent Ryan</h2>
+      <p class="profile-role">BSIT Student &nbsp;·&nbsp; Aspiring Data Engineer</p>
+      <p class="profile-handle">@K3NT0Z4K1</p>
+    </div>
+
+    <!-- CARD 2: About -->
+    <div class="card card-about">
+      <div class="status-bar">
+        <span class="status-dot"></span>
+        <span class="status-text">Open for Opportunities</span>
+        <div class="social-icons">
+          <a href="mailto:kentryanpagongpong@gmail.com" title="Email" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </a>
+          <a href="https://github.com/K3NT0Z4K1" target="_blank" title="GitHub" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100021834003129" target="_blank" title="Facebook" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="about-body">
+        <h3 class="card-label"><span class="label-icon">ℹ</span> About</h3>
+        <p>I'm a third-year BSIT student focused on building practical, data-driven systems for school and small-organization use cases. My projects involve backend logic, database design, and system workflows — admissions, exam scheduling, and result management.</p>
+        <p>I enjoy working with structured data and turning manual processes into automated solutions. Currently strengthening my foundation in web development and databases while exploring a future path in <strong>Data Engineering</strong>.</p>
+        <span class="last-updated">Last updated May 2026</span>
+      </div>
+    </div>
+
+    <!-- CARD 3: Globe / Location -->
+    <div class="card card-globe">
+      <p class="location-label">Based in</p>
+      <h3 class="location-city">Bulacan, Philippines</h3>
+      <p class="location-tz">GMT+8</p>
+      <div class="globe-wrap">
+        <canvas id="globeCanvas"></canvas>
+      </div>
+      <div class="languages">
+        <span class="lang">English</span>
+        <span class="lang-sep">|</span>
+        <span class="lang">Filipino</span>
+        <span class="lang-sep">|</span>
+        <span class="lang">Tagalog</span>
+      </div>
+    </div>
+
+    <!-- CARD 4: Stack -->
+    <div class="card card-stack">
+      <h3 class="card-label"><span class="label-icon">⬡</span> Main Stack</h3>
+      <div class="stack-grid">
+        <div class="stack-item" title="HTML5">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+          </div>
+          <span>HTML</span>
+        </div>
+        <div class="stack-item" title="CSS3">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414v-.001z"/></svg>
+          </div>
+          <span>CSS</span>
+        </div>
+        <div class="stack-item" title="JavaScript">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+          </div>
+          <span>JS</span>
+        </div>
+        <div class="stack-item" title="Java">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.132.827-.107.827-.107-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.978-1.806M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.544 1.644-2.469 6.197-3.665 5.19-7.622M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/></svg>
+          </div>
+          <span>Java</span>
+        </div>
+        <div class="stack-item" title="C#">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.109-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg>
+          </div>
+          <span>C#</span>
+        </div>
+        <div class="stack-item" title="Git">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.6.18-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+          </div>
+          <span>Git</span>
+        </div>
+        <div class="stack-item" title="Node.js">
+          <div class="stack-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M11.998.001c-.321 0-.641.084-.924.247L2.35 5.168C1.775 5.499 1.42 6.112 1.42 6.77v10.46c0 .658.354 1.271.93 1.602l8.724 4.92c.283.163.603.247.924.247s.641-.084.924-.247l8.724-4.92c.576-.331.93-.944.93-1.602V6.77c0-.658-.354-1.271-.93-1.602L12.922.248C12.639.085 12.319.001 11.998.001zm-.085 3.274l7.353 4.147c.252.142.252.374 0 .516l-7.353 4.147c-.252.142-.504.142-.756 0L3.804 7.938c-.252-.142-.252-.374 0-.516l7.353-4.147c.252-.142.504-.142.756 0zm-8.4 6.455l7.353 4.147v8.295c0 .283-.17.424-.336.33L2.607 17.62c-.252-.142-.42-.42-.42-.756V10.31c0-.283.17-.424.336-.33l1.327.748-.337.002zm16.8 0l.337-.002c.166-.094.336.047.336.33v6.554c0 .336-.168.614-.42.756l-7.923 4.882c-.166.094-.336-.047-.336-.33v-8.295l7.006-3.895z"/></svg>
+          </div>
+          <span>Node</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 5: Work Experience -->
+    <div class="card card-experience">
+      <h3 class="card-label"><span class="label-icon">🖥</span> Work Experience</h3>
+      <div class="exp-item">
+        <div class="exp-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+        </div>
+        <div class="exp-body">
+          <div class="exp-top">
+            <strong>Fullstack Intern</strong>
+            <span class="exp-date">March 2026 – Present</span>
+          </div>
+          <p class="exp-company">Gwago Printing Services</p>
+          <p class="exp-desc">Developing an order and inventory management system to streamline processes and drive operational efficiency.</p>
+        </div>
+      </div>
+      <div class="exp-divider"></div>
+      <div class="exp-item">
+        <div class="exp-badge exp-badge-red">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="exp-body">
+          <div class="exp-top">
+            <strong>Full Stack Developer</strong>
+            <span class="exp-date">March 2025 – February 2026</span>
+          </div>
+          <p class="exp-company">NewStudio</p>
+          <p class="exp-desc">Worked closely with popular YouTube content creators to design features that improve the YouTube Studio experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6: Education + Resume -->
+    <div class="card card-education">
+      <h3 class="card-label"><span class="label-icon">🎓</span> Education</h3>
+      <div class="edu-group">
+        <p class="edu-degree">Bachelor of Science in Information Technology</p>
+        <div class="edu-row"><span>La Consolacion University Philippines</span><span class="edu-year">2026</span></div>
+        <div class="edu-row"><span>Cebu Institute of Technology – University</span><span class="edu-year">2021</span></div>
+      </div>
+      <div class="edu-divider"></div>
+      <div class="edu-group">
+        <p class="edu-degree">High School Diploma</p>
+        <div class="edu-row"><span>Asian College of Technology</span><span class="edu-year">2020</span></div>
+        <div class="edu-row"><span>Colegio de Calumpit Institute</span><span class="edu-year">2019</span></div>
+      </div>
+      <button class="resume-btn" onclick="window.open('./assets/resume-example.pdf')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Resume
+      </button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
